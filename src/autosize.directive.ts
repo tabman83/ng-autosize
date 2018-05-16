@@ -68,7 +68,7 @@ export class Autosize implements AfterViewInit {
       return;
     }
     this.el.style.overflow = 'hidden';
-    this.el.style.height = 'auto';
+    this.el.style.height = this._minHeight + 'px';
     this.el.style.height = this.el.scrollHeight + 'px';
   }
 
